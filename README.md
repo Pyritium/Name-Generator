@@ -1,3 +1,3 @@
 # Name-Generator
 
-Nothing impressive, another project to help undergo my learning for C++. Name says it all! It's a name generator!
+This was just a little project to get back into the workflow of C++ practice, as I've been a bit lazy :(
