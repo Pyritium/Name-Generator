@@ -2,12 +2,14 @@
 #include <array>
 #include <string>
 #include <stdlib.h>
+#include <ctype.h>
+
 typedef std::string string;
 
 namespace GenerateName
 {
 	std::array<string, 10>FirstNames = { "Alex", "Brooklynn", "Cadyn", "Dan", "Eustice", "Finn", "Grace", "Henry", "Isaac", "Joshua" };
-	std::array<string, 10>LastNames = { "Anzalone", "Peterson", "Rosenkrantz", "Beane", "Dapice", "Moura", "Grigoletto", "Philbert", "Dowling", "Taber"};
+	std::array<string, 10>LastNames = { "Anzalone", "Peterson", "Rosenkrantz", "Beane", "Dapice", "Moura", "Grigoletto", "Philbert", "Dowling", "Taber" };
 
 
 	namespace functions
@@ -25,12 +27,16 @@ namespace GenerateName
 			string Input;
 			std::cin >> Input;
 
-			if (Input == "Y") {
+			if (Input == "y" || Input == "Y") {
 				std::cout << "Name chosen!\n";
 				return FullName;
 			}
-			else if (Input == "N") {
+			else if (Input == "n" || Input == "N") {
 				std::cout << "Regenerating...\n";
+				return Name();
+			}
+			else {
+				std::cout << "Invalid Input: Auto defaulting to new username...";
 				return Name();
 			}
 		}
