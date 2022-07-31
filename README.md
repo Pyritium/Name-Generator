@@ -1,3 +1,3 @@
 # Name-Generator
 
-Self-explanatory, generates names (but in C++!), this is another test project, feel free to use to learn from!
+Nothing impressive, another project to help undergo my learning for C++. Name says it all! It's a name generator!
